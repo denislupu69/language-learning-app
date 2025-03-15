@@ -1,18 +1,15 @@
 package com.learningapp.demo.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
-@ToString
 public class Test {
-
-    
-    private String nume;
-    private int numarIntrebari;
-    private double dificultate;
-    private boolean trecut;
+    private String intrebare;
+    private String[] optiuni;
+    private String raspunsCorect;
+    private Curs curs;
 }
