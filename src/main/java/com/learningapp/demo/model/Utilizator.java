@@ -1,23 +1,16 @@
 package com.learningapp.demo.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode
+@ToString
 public class Utilizator {
     private String nume;
     private int varsta;
-    private String limbaStudiata;
+    private String limbaStudiate;
     private double progres;
-    private Curs curs;
-
-    @Autowired
-    public void setCurs(Curs curs) {
-        this.curs = curs;
-    }
 }
-
