@@ -9,6 +9,8 @@ import lombok.*;
 @EqualsAndHashCode
 @ToString
 public class Test {
+
+    
     private String nume;
     private int numarIntrebari;
     private double dificultate;
