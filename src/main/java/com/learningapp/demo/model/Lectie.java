@@ -1,16 +1,16 @@
 package com.learningapp.demo.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
-@ToString
 public class Lectie {
     private String titlu;
     private String continut;
     private int durataMinute;
     private boolean finalizata;
+    private Curs curs;
 }
